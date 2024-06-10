@@ -4,7 +4,6 @@ import { NavLink } from 'react-router-dom';
 import course from '../images/js.png';
 import rating from '../images/star.png';
 
-
 const courseFeature = [
     'https://images.pexels.com/photos/2781195/pexels-photo-2781195.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     'https://images.pexels.com/photos/2681319/pexels-photo-2681319.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
