@@ -17,6 +17,9 @@ const New = () => {
             <LandingPage>
                 <div className="main-container flex">
                     <div className="box-1 detail-box head w-[65%]">
+
+                        {/* line-1 */}
+
                         <div className='line-1 flex justify-between p-16 h-10 flex-wrap'>
                             <h1 className='heading text-3xl font-semibold'>Shopping Cart</h1>
                             <p className='delivery-option'><a href="">Delivery option</a></p>
@@ -24,6 +27,9 @@ const New = () => {
                         <div className='mx-3 hr-1'>
                             <hr className='half-line' />
                         </div>
+
+                        {/* line-2 */}
+
                         <div className='line-2 px-20 flex justify-between p-10 h-10'>
                             <p className='items font-semibold'>Item</p>
                             <p className='prices font-semibold'>Total price</p>
@@ -31,6 +37,7 @@ const New = () => {
                         <div className='mx-3 hr-2'>
                             <hr className='half-line' />
                         </div>
+
 
                         {/* duplicate-1 */}
 
@@ -293,6 +300,7 @@ const LandingPage = styled.div`
  }
 
 
+
  @media screen and (min-width: 1024px) and (max-width: 1200px){
      
      .coupon-box {
@@ -307,17 +315,9 @@ const LandingPage = styled.div`
           
     }
 
-    
- @media screen and (min-width: 820px){
-
-}
-
-
-
 
  @media screen and (min-width: 768px) and (max-width: 1024px){
 
-    background-color: #28a745;
 
 .line-3a {
     display: flex;
@@ -332,8 +332,8 @@ const LandingPage = styled.div`
 }
 
 .payment-box {
-    padding-top: 10px;
-    width: 40%;
+    padding-top: 20px;
+    width: 90%;
 }
 
 
@@ -348,13 +348,11 @@ const LandingPage = styled.div`
     color: white;
 }
 
+
  }
 
-
-
-
  
-@media screen and (min-width: 540px) and (max-width: 590px){
+@media screen and (min-width: 480px) and (max-width: 768px){
 
     
 .line-3a {
@@ -373,7 +371,6 @@ const LandingPage = styled.div`
     padding-top: 10px;
     width: 40%;
 }
-
 
 .box-2 {
     position: fixed;
@@ -393,17 +390,10 @@ const LandingPage = styled.div`
 
 }
 
-
 } 
 
-@media screen and (min-width: 481px) and (max-width: 768px){
-
-
-    
-}
-
-
 @media screen and (min-width: 320px) and (max-width: 480px){
+
 
 .heading {
     font-size: 22px;
@@ -481,6 +471,7 @@ const LandingPage = styled.div`
 
 .line-2 {
     display: flex;
+    justify-content: center;
 }
 
 .hidden-payment {
