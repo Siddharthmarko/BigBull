@@ -1,14 +1,21 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 import { IoMenu } from "react-icons/io5";
-import {NavLink} from 'react-router-dom';
-import logo from './../../public/logo/logo.png'
+import { NavLink } from 'react-router-dom';
+import logo from './../../public/logo/logo.png';
 import { SiOpenlayers } from "react-icons/si";
 import { FaArrowRightLong } from "react-icons/fa6";
-import heroBackground from '../Assets/hero.mp4'
-import courseFeatureBackground from '../Assets/courseFeatureBackground.jpg'
+import heroBackground from '../Assets/hero.mp4';
+import courseFeatureBackground from '../Assets/courseFeatureBackground.jpg';
 import SementicRightImage from '../Assets/SementicRightImage.png'
 import blogThumbnail from '../Assets/blogThumbnail.jpeg'
 import courseThumbain from '../Assets/courseThumbnail.jpg'
+import faq from '../images/faq.png'
+import layers from '../images/layers.png'
+import star from '../images/star.png'
+import contact from '../images/contact.png'
+import comma1 from '../images/comma1.png'
+import comma2 from '../images/comma2.png'
+
 
 const courseFeature = [
     'https://images.pexels.com/photos/2781195/pexels-photo-2781195.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
@@ -51,17 +58,17 @@ const Home = () => {
                                 </div>
                             </div>
                             <div>
-                                <IoMenu size={'3rem'} color='white'/>                            
+                                <IoMenu size={'3rem'} color='white' />
                             </div>
                         </nav>
-                    </header>    
+                    </header>
                     {/* hero part */}
                     <div>
                         <div className='h-screen' >
                             <video src={heroBackground} autoPlay loop muted className='h-full w-full object-cover'></video>
                             <div className='absolute top-0 text-white h-full flex flex-col justify-center w-4/5 px-5'>
                                 <h1 className='font-semibold text-9xl leading-tight'>Master the Stock Market with Our Expert-Led Courses</h1>
-                                <p className='text-5xl font-normal mt-10 leading-snug'>Learn the secrets of stock market investing from industry professionals.</p>
+                                <p className='text-5x1 font-normal mt-10 leading-snug'>Learn the secrets of stock market investing from industry professionals.</p>
                             </div>
 
                         </div>
@@ -71,7 +78,7 @@ const Home = () => {
                 <div className='feature-course-page my-10'>
                     <h1 className='text-8xl text-center my-10'>Our Course Feature</h1>
                     {/* container */}
-                    <div className='feature-container p-8 flex justify-around flex-wrap'> 
+                    <div className='feature-container p-8 flex justify-around flex-wrap'>
                         {/* card */}
                         <div className='course-feature w-72'>
                             {/* image */}
@@ -103,26 +110,26 @@ const Home = () => {
                     </div>
                 </div>
                 {/* Sementic */}
-                <div className='grid grid-cols-2 gap-10 px-5 my-10'> 
+                <div className='grid grid-cols-2 gap-10 px-5 my-10'>
                     {/* left */}
                     <div className='flex flex-col'>
                         <div className='self-center'>
                             <h2 className='text-7xl	mb-10 '>Schematic</h2>
-                            <button className='text-xl border-2 rounded-3xl border-black py-2 px-7'>Brand Identity</button>    
+                            <button className='text-xl border-2 rounded-3xl border-black py-2 px-7'>Brand Identity</button>
                         </div>
                         {/* content */}
                         <div className='gap-y-14 mt-14 max-w-md self-end'>
-                            <div className='flex gap-11 mb-12'> 
+                            <div className='flex gap-11 mb-12'>
                                 {/* numberr */}
                                 <div className='text-7xl'>01</div>
                                 {/* paragraph */}
                                 <div>
                                     <h3 className='text-4xl font-semibold'>Background</h3>
-                                    <p className='text-2xl leading-10 mt-3'>Give a brief overview of your project here. 
+                                    <p className='text-2xl leading-10 mt-3'>Give a brief overview of your project here.
                                         You may talk about the client brand and the main project challenge.</p>
                                 </div>
                             </div>
-                            <div className='flex gap-11'> 
+                            <div className='flex gap-11'>
                                 {/* numberr */}
                                 <div className='text-7xl'>02</div>
                                 {/* paragraph */}
@@ -144,12 +151,12 @@ const Home = () => {
                 <div className='my-10 py-10'>
                     <h1 className='text-8xl text-center my-10'>Course</h1>
                     {/* container */}
-                    <div className='p-8 flex justify-around flex-wrap'> 
+                    <div className='p-8 flex justify-around flex-wrap'>
                         {/* card */}
                         <div className='border-2 border-black'>
                             {/* image */}
                             <div className='h-52 w-80'>
-                                <img src={courseThumbain} alt="" className='h-full object-cover	'/>
+                                <img src={courseThumbain} alt="" className='h-full object-cover	' />
                             </div>
                             {/* content */}
                             <div className=''>
@@ -184,9 +191,9 @@ const Home = () => {
                 {/* Subscription */}
                 <div className='text-center'>
                     <h1 className='text-6xl max-w-2xl'>Choice your best <span className='font-semibold'>SUBSCRIPTION</span>Plan</h1>
-                    <div className='p-8 flex justify-around flex-wrap'> 
-                        <div className='border-2 border-black rounded-3xl	'>
-                        {/* card */}
+                    <div className='p-8 flex justify-around flex-wrap'>
+                        <div className='border-2 border-black rounded-3xl'>
+                            {/* card */}
                             <div className='p-6'>
                                 <h2 className='text-5xl py-3 px-12 bg-red-600 rounded-full font-semibold'>Monthly</h2>
                                 <div className='flex flex-col subcription-card'>
@@ -204,10 +211,10 @@ const Home = () => {
                                     </div>
                                     <button className='text-2xl py-2.5 bg-red-600 rounded-full font-semibold'>Join</button>
                                 </div>
-                            </div>                            
+                            </div>
                         </div>
                         <div className='border-2 border-black rounded-3xl m-auto'>
-                        {/* card */}
+                            {/* card */}
                             <div className='p-6'>
                                 <h2 className='text-5xl py-3 px-12 bg-red-600 rounded-full font-semibold'>Monthly</h2>
                                 <div className='flex flex-col subcription-card'>
@@ -225,10 +232,10 @@ const Home = () => {
                                     </div>
                                     <button className='text-2xl py-2.5 bg-red-600 rounded-full font-semibold'>Join</button>
                                 </div>
-                            </div>                            
+                            </div>
                         </div>
                         <div className='border-2 border-black rounded-3xl	'>
-                        {/* card */}
+                            {/* card */}
                             <div className='p-6'>
                                 <h2 className='text-5xl py-3 px-12 bg-red-600 rounded-full font-semibold'>Monthly</h2>
                                 <div className='flex flex-col subcription-card'>
@@ -246,7 +253,7 @@ const Home = () => {
                                     </div>
                                     <button className='text-2xl py-2.5 bg-red-600 rounded-full font-semibold'>Join</button>
                                 </div>
-                            </div>                            
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -257,22 +264,22 @@ const Home = () => {
                         {/* images */}
                         <div className=' flex  gap-20 my-20 flex-wrap'>
                             <div className='w-96'>
-                                <img src={courseThumbain} alt="" className='w-full h-full'/>
+                                <img src={courseThumbain} alt="" className='w-full h-full' />
                             </div>
                             {/* content */}
-                            <div className='max-w-2xl'> 	
+                            <div className='max-w-2xl'>
                                 <h2 className='text-5xl	mb-7 leading-10'>Start your journey now, level up your skill</h2>
                                 <p className='text-lg leading-10'>Morbi tempor eleifend condimentum. Etiam mollis urna et massa tempus vulputate. Nunc sed nisl est. Donec non consectetur elit. Praesent accumsan elit urna, eget mattis turpis aliquam a. In sagittis bibendum consequat. Quisque porta volutpat ligula sit amet varius</p>
                             </div>
                         </div>
                         <div className=' flex m-auto gap-20 my-20 flex-wrap-reverse'>
                             {/* content */}
-                            <div className='max-w-2xl'> 	
+                            <div className='max-w-2xl'>
                                 <h2 className='text-5xl	mb-7 leading-10'>Start your journey now, level up your skill</h2>
                                 <p className='text-lg leading-10'>Morbi tempor eleifend condimentum. Etiam mollis urna et massa tempus vulputate. Nunc sed nisl est. Donec non consectetur elit. Praesent accumsan elit urna, eget mattis turpis aliquam a. In sagittis bibendum consequat. Quisque porta volutpat ligula sit amet varius</p>
                             </div>
                             <div className='w-96'>
-                                <img src={courseThumbain} alt="" className='w-full h-full'/>
+                                <img src={courseThumbain} alt="" className='w-full h-full' />
                             </div>
                         </div>
                     </div>
@@ -280,7 +287,7 @@ const Home = () => {
                         <button className='inline-flex	 gap-5 text-white bg-red-600 py-2 px-6 rounded-3xl'><SiOpenlayers />View All</button>
                     </div>
                 </div>
-                    {/* Call to Actions */}
+                {/* Call to Actions */}
                 <div className='px-32'>
                     <div className='mb-20'>
                         <h1 className='text-7xl	mb-10'>Call to Action</h1>
@@ -302,13 +309,89 @@ const Home = () => {
                             <button className='text-xl py-6 px-32 rounded-3xl border-2 border-black flex items-center gap-5	'>Trading Guide <FaArrowRightLong /></button>
                         </div>
                     </div>
-                    
-
                 </div>
-            </LandingPage>            
+                {/* testimonials */}
+                {/* left */}
+                <div className="testimonial-page flex justify-center items-center mt-5 flex-wrap">
+                    <div className="testimonial-container border rounded-[20px] border-red-300 w-[80%] md:w-[80%] pb-40 flex flex-col flex-wrap">
+                        <h1 className='heading text-4xl text-center my-10 fs-5'>Our<i>Happy Learner</i></h1>
+                        <div className="">
+                            <div class="container-1 max-h-32">
+                                <div className='self-center mb-32'>
+                                    <h2 className='text-4xl	mb-5 pl-10'>Testimonials</h2>
+                                    <div className="w-24 flex flex-wrap pl-12">
+                                        <img src={layers} alt="layers pic" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {/* inner card */}
+
+                        <div className="box-container w-[100%] flex justify-center items-center" >
+                            <div className=' inner-box w-1/2 h-80 md:h-64 sm:h- flex flex-col justify-center items-center flex-wrap border rounded-[20px] border-red-300 rounded relative'>
+                                <div className='w-28 absolute bottom-[80%] flex flex-wrap'>
+                                    <img src={contact} alt="Profile pic" />
+                                </div>
+                                {/* ratings */}
+                                <div class='w-40 absolute top-[85%] flex flex-wrap'>
+                                    <img src={star} alt='rating' />
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                {/* faQ */}
+                <div className='grid grid-cols-2 gap-10 px-5 my-10'>
+                    {/* left */}
+                    <div className='flex flex-col'>
+                        <div className='self-center'>
+                            <h2 className='text-7xl	mb-10 '>FAQ</h2>
+                            <button className='text-xl border-2 rounded-3xl border-black py-2 px-7'>Testing</button>
+                        </div>
+                        {/* content */}
+                        <div className='gap-y-14 mt-14 max-w-md self-end'>
+                            <div className='flex gap-11 mb-12'>
+                                {/* numberr */}
+                                <div className='text-7xl'>01</div>
+                                {/* paragraph */}
+                                <div>
+                                    <h3 className='text-4xl '>How do i enroll?</h3>
+                                </div>
+                            </div>
+                            <div className='flex gap-11 mb-12'>
+                                {/* numberr */}
+                                <div className='text-7xl'>02</div>
+                                {/* paragraph */}
+                                <div>
+                                    <h3 className='text-4xl'>What is the course duration?</h3>
+                                </div>
+                            </div>
+                            <div className='flex gap-11'>
+                                {/* numberr */}
+                                <div className='text-7xl'>03</div>
+                                {/* paragraph */}
+                                <div>
+                                    <h3 className='text-4xl'>Are there any Prerequsites?</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {/* right */}
+                    <div>
+                        <div className='p-10'>
+                            <img src={faq} alt="" width="100%" />
+                        </div>
+                    </div>
+                </div>
+
+            </LandingPage>
         </>
-    )       
+    )
 }
+
 
 export default Home;
 const LandingPage = styled.div`
@@ -339,4 +422,54 @@ const LandingPage = styled.div`
     line-height: 3.5rem;
  }
 
-`
+
+
+
+ /* media queries (testimonials) - */
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px){
+
+    .testimonial-page{     
+        width: 120%;
+    }
+
+    .testimonial-container{    
+         margin-left: auto;
+         margin-right: auto;
+        }
+
+        h1 {
+            font-size: 35px;
+        }
+    
+}
+
+
+
+@media screen and (min-width: 540px) and (max-width: 481px){
+    
+ 
+
+    } 
+    
+@media screen and (min-width: 481px) and (max-width: 768px){
+    
+    
+}
+
+ @media screen and (min-width: 320px) and (max-width: 480px){
+     
+     
+     .testimonial-page {    
+        width: 120%;
+        }
+        
+     .testimonial-container {         
+        margin-left: auto;
+         margin-right: auto;
+        }
+}
+    
+        
+`;
