@@ -284,7 +284,6 @@ const LandingPage = styled.div`
          top: 0;
          right: 0;
          background-color: white;
-         /* width: 250px; */
      }
 
      .coupon-box {
@@ -311,47 +310,57 @@ const LandingPage = styled.div`
         .apply-text{
             padding: 4px 12px 7px;
         }
-          
     }
 
 
- @media screen and (min-width: 768px) and (max-width: 1024px){
+@media screen and (min-width: 768px) and (max-width: 1020px){
 
 
 .line-3a {
-    display: flex;
-    flex-direction: column;
-    padding-top: 20px;
+display: flex;
+flex-direction: column;
+padding-top: 20px;
+color: red;
 }
 
 .remove-later {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 25px;
+display: flex;
+justify-content: space-between;
+padding-top: 25px;
 }
 
 .payment-box {
-    padding-top: 20px;
-    width: 90%;
+padding-top: 20px;
+width: 40%;
 }
-
 
 .box-2 {
-    position: fixed;
-    top: 0;
-    right: 0;
-    background-color: white;
-}
-
-.summary-head-box {
-    color: white;
-}
-
-
+     position: fixed;
+     top: 0;
+     right: 0;
+     background-color: white;
  }
 
+
+.summary-head-box {
+color: white;
+}
+
+.prices {
+display: none;
+}
+
+.line-2 {
+display: flex;
+justify-content: center;
+font-size: 18px;
+}
+
+}
+
+
  
-@media screen and (min-width: 480px) and (max-width: 768px){
+@media screen and (min-width: 480px) and (max-width: 767px){
 
     
 .line-3a {
@@ -379,7 +388,7 @@ const LandingPage = styled.div`
     width: 250px;
 }
 
-.paypal-btn, .apply-btn, .checkout-btn{
+.paypal-btn, .apply-btn, .checkout-btn {
    font-size: 12px;
 }
 
@@ -393,9 +402,9 @@ const LandingPage = styled.div`
 
 @media screen and (min-width: 320px) and (max-width: 480px){
 
-
-.heading {
-    font-size: 22px;
+    
+    .heading {
+        font-size: 22px;
 }
 
 .main-container {
@@ -471,6 +480,8 @@ const LandingPage = styled.div`
 .line-2 {
     display: flex;
     justify-content: center;
+   
+
 }
 
 .hidden-payment {
@@ -488,23 +499,6 @@ const LandingPage = styled.div`
 .prices {
     display: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

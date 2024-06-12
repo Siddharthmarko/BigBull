@@ -15,6 +15,9 @@ import star from '../images/star.png'
 import contact from '../images/contact.png'
 import comma1 from '../images/comma1.png'
 import comma2 from '../images/comma2.png'
+import Carousel from './carousel';
+
+
 
 
 const courseFeature = [
@@ -190,7 +193,11 @@ const Home = () => {
                 </div>
                 {/* Subscription */}
                 <div className='text-center'>
-                    <h1 className='text-6xl max-w-2xl'>Choice your best <span className='font-semibold'>SUBSCRIPTION</span>Plan</h1>
+
+
+                    {/* COMMENTED OUT */}
+
+                    {/* <h1 className='text-6xl max-w-2xl'>Choice your best <span className='font-semibold'>SUBSCRIPTION</span>Plan</h1> */}
                     <div className='p-8 flex justify-around flex-wrap'>
                         <div className='border-2 border-black rounded-3xl'>
                             {/* card */}
@@ -288,7 +295,7 @@ const Home = () => {
                     </div>
                 </div>
                 {/* Call to Actions */}
-                <div className='px-32'>
+                {/* <div className='px-32'>
                     <div className='mb-20'>
                         <h1 className='text-7xl	mb-10'>Call to Action</h1>
                         <p className='text-4xl	'>Join Now and Start Your Journey to Financial Mastery!</p>
@@ -309,8 +316,12 @@ const Home = () => {
                             <button className='text-xl py-6 px-32 rounded-3xl border-2 border-black flex items-center gap-5	'>Trading Guide <FaArrowRightLong /></button>
                         </div>
                     </div>
-                </div>
+                </div> */}
+
+
                 {/* testimonials */}
+
+
                 {/* left */}
                 <div className="testimonial-page flex justify-center items-center mt-5 flex-wrap">
                     <div className="testimonial-container border rounded-[20px] border-red-300 w-[80%] md:w-[80%] pb-40 flex flex-col flex-wrap">
@@ -318,27 +329,18 @@ const Home = () => {
                         <div className="">
                             <div class="container-1 max-h-32">
                                 <div className='self-center mb-32'>
-                                    <h2 className='text-4xl	mb-5 pl-10'>Testimonials</h2>
-                                    <div className="w-24 flex flex-wrap pl-12">
-                                        <img src={layers} alt="layers pic" />
+                                    <h2 className='testimonial-text text-4xl	mb-5 pl-10'>Testimonials</h2>
+                                    <div className="layerss w-24 flex flex-wrap pl-12">
+                                        <img src={layers} alt="layers pic" className='layer' />
                                     </div>
                                 </div>
                             </div>
                         </div>
                         {/* inner card */}
 
-                        <div className="box-container w-[100%] flex justify-center items-center" >
-                            <div className=' inner-box w-1/2 h-80 md:h-64 sm:h- flex flex-col justify-center items-center flex-wrap border rounded-[20px] border-red-300 rounded relative'>
-                                <div className='w-28 absolute bottom-[80%] flex flex-wrap'>
-                                    <img src={contact} alt="Profile pic" />
-                                </div>
-                                {/* ratings */}
-                                <div class='w-40 absolute top-[85%] flex flex-wrap'>
-                                    <img src={star} alt='rating' />
-                                </div>
-                            </div>
+                        <div>
+                            <Carousel />
                         </div>
-
                     </div>
                 </div>
 
@@ -462,14 +464,41 @@ const LandingPage = styled.div`
      
      
      .testimonial-page {    
-        width: 120%;
+        width: 100%;
         }
         
      .testimonial-container {         
         margin-left: auto;
          margin-right: auto;
+         padding-bottom: 2px;
         }
-}
+
+        .self-center {
+            text-align: center;
+            margin-bottom: 10px; 
+            /* font-size: 20px; */
+        } 
+
+        .testimonial-text {
+            font-size: 30px;
+        }
+
+        .heading {
+            font-size: 32px;
+        }
+
+        .layer {
+            width: 40px;
+            height: 40px;
+        }
+
+        .testimonials-image {
+            height: 70%;
+            /* width: 20%; */
+        }
+
+ }
+
     
         
 `;
