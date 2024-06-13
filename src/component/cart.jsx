@@ -10,7 +10,7 @@ const courseFeature = [
     'https://images.pexels.com/photos/159844/cellular-education-classroom-159844.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
 ];
 
-const New = () => {
+const Cart = () => {
     return (
         <>
             <LandingPage>
@@ -262,7 +262,7 @@ const New = () => {
 
 
 
-export default New;
+export default Cart;
 const LandingPage = styled.div`
 
 

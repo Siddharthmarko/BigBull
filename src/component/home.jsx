@@ -113,26 +113,26 @@ const Home = () => {
                     </div>
                 </div>
                 {/* Sementic */}
-                <div className='grid grid-cols-2 gap-10 px-5 my-10'>
+                <div  className='grid lg:grid-cols-2 sm:grid-cols-1 grid gap-10 px-5 py-20 my-10 '> 
                     {/* left */}
-                    <div className='flex flex-col'>
+                    <div className='flex flex-col sementic-left flex-wrap'>
                         <div className='self-center'>
                             <h2 className='text-7xl	mb-10 '>Schematic</h2>
-                            <button className='text-xl border-2 rounded-3xl border-black py-2 px-7'>Brand Identity</button>
+                            <button className='text-xl border-2 rounded-3xl border-black py-2 px-7'>Brand Identity</button>    
                         </div>
                         {/* content */}
-                        <div className='gap-y-14 mt-14 max-w-md self-end'>
-                            <div className='flex gap-11 mb-12'>
+                        <div className='gap-y-14 mt-14 max-w-md lg:self-end self-center'>
+                            <div className='flex gap-11 mb-12'> 
                                 {/* numberr */}
                                 <div className='text-7xl'>01</div>
                                 {/* paragraph */}
                                 <div>
                                     <h3 className='text-4xl font-semibold'>Background</h3>
-                                    <p className='text-2xl leading-10 mt-3'>Give a brief overview of your project here.
+                                    <p className='text-2xl leading-10 mt-3'>Give a brief overview of your project here. 
                                         You may talk about the client brand and the main project challenge.</p>
                                 </div>
                             </div>
-                            <div className='flex gap-11'>
+                            <div className='flex gap-11'> 
                                 {/* numberr */}
                                 <div className='text-7xl'>02</div>
                                 {/* paragraph */}
@@ -142,11 +142,22 @@ const Home = () => {
                                 </div>
                             </div>
                         </div>
+                        <div className='relative'>
+                        <div className='max-w-4xl absolute bull-animation hidden lg:block'>
+                            {/* <img src={bullImage} alt="" width="100%" /> */}
+                        </div>
+                    </div>
                     </div>
                     {/* right */}
-                    <div>
-                        <div className='p-10'>
+                    <div className='content-center sementic-right relative test-tablet'>
+                        <div className='max-w-4xl table'>
                             <img src={SementicRightImage} alt="" width="100%" />
+                            {/* <video src={heroBackground} autoPlay loop muted className='h-full w-full object-cover'></video> */}
+                            
+                        </div>
+                        <div className='mobile'>
+                            {/* <video src={mobileFrameVideo} autoPlay loop muted className='h-full w-full object-cover'></video> */}
+                            
                         </div>
                     </div>
                 </div>
@@ -328,8 +339,8 @@ const Home = () => {
                         <h1 className='heading text-4xl text-center my-10 fs-5'>Our<i>Happy Learner</i></h1>
                         <div className="">
                             <div class="container-1 max-h-32">
-                                <div className='self-center mb-32'>
-                                    <h2 className='testimonial-text text-4xl	mb-5 pl-10'>Testimonials</h2>
+                                <div className='self-center mb-16   '>
+                                    <h2 className='testimonial-text text-4xl mb-5 pl-10'>Testimonials</h2>
                                     <div className="layerss w-24 flex flex-wrap pl-12">
                                         <img src={layers} alt="layers pic" className='layer' />
                                     </div>
@@ -346,49 +357,7 @@ const Home = () => {
 
 
                 {/* faQ */}
-                <div className='grid grid-cols-2 gap-10 px-5 my-10'>
-                    {/* left */}
-                    <div className='flex flex-col'>
-                        <div className='self-center'>
-                            <h2 className='text-7xl	mb-10 '>FAQ</h2>
-                            <button className='text-xl border-2 rounded-3xl border-black py-2 px-7'>Testing</button>
-                        </div>
-                        {/* content */}
-                        <div className='gap-y-14 mt-14 max-w-md self-end'>
-                            <div className='flex gap-11 mb-12'>
-                                {/* numberr */}
-                                <div className='text-7xl'>01</div>
-                                {/* paragraph */}
-                                <div>
-                                    <h3 className='text-4xl '>How do i enroll?</h3>
-                                </div>
-                            </div>
-                            <div className='flex gap-11 mb-12'>
-                                {/* numberr */}
-                                <div className='text-7xl'>02</div>
-                                {/* paragraph */}
-                                <div>
-                                    <h3 className='text-4xl'>What is the course duration?</h3>
-                                </div>
-                            </div>
-                            <div className='flex gap-11'>
-                                {/* numberr */}
-                                <div className='text-7xl'>03</div>
-                                {/* paragraph */}
-                                <div>
-                                    <h3 className='text-4xl'>Are there any Prerequsites?</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    {/* right */}
-                    <div>
-                        <div className='p-10'>
-                            <img src={faq} alt="" width="100%" />
-                        </div>
-                    </div>
-                </div>
-
+             
             </LandingPage>
         </>
     )

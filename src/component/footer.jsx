@@ -1,34 +1,44 @@
 import React from 'react';
 import styled from 'styled-components';
+import img from '../images/logo.png';
+import { FaFacebook } from "react-icons/fa";
+import { FaSquareInstagram } from "react-icons/fa6";
+import { FaTwitterSquare } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa6";
+import { FaYoutube } from "react-icons/fa";
 
-const NewContact = () => {
+
+    
+const Footer = () => {
     return (
         <>
             <StyledContact>
 
             <footer>
-                    <div class="main-footer">
-                        <div className="footer-content bg-white text-center">
-                            <img src={img2} alt="" width="100px" class=" bottom-img pt-md-2" />
-                            <h4 class="pt-4">We are Social</h4>
-                            <p class='bottom-para pt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda!</p>
+                    <div class="main-footer h-75 bg-blue-300">
+                        <div className="footer-content bg-white text-center text-lg">
+                            <div className='flex justify-center '>
+                            <img src={img} alt="" width="100px" class=" bottom-img pt-md-2 " />
+                            </div>
+                            <h4 class="pt-4 text-3xl font-semibold">We are Social</h4>
+                            <p class='bottom-para pt-2 pb-10 text-2xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda!</p>
                             <div className="bottom-icons">
-                                <div className="icons pt-2">
-                                    <i class="bi bi-facebook px-4 fa-2x icon"></i>
-                                    <i class="bi bi-twitter px-4 fa-2x icon"></i>
-                                    <i class="bi bi-instagram px-4 fa-2x icon"></i>
-                                    <i class="bi bi-linkedin px-4 fa-2x icon"></i>
-                                    <i class="bi bi-youtube px-4 fa-2x icon"></i>
+                                <div className="icons pt-2 flex justify-center pb-10">
+                                    <div className='px-8 icon text-5xl'> <FaFacebook /></div>
+                                    <div className='px-8 icon text-5xl'> <FaSquareInstagram /></div>
+                                    <div className='px-8 icon text-5xl'> <FaTwitterSquare /></div>
+                                    <div className='px-8 icon text-5xl'> <FaLinkedin /></div>
+                                    <div className='px-8 icon text-5xl'> <FaYoutube /></div>
                                 </div>
                             </div>
 
-                            <div className="pt-md-5 bottom-content d-flex justify-content-around  ">
-                                <div className="contact-info text-start pt-5">
+                            <div className="bottom-content flex justify-center ">
+                                <div className="contact-info text-start pt-5 m-auto">
                                     <p class="para line-1 "><i class="bi bi-envelope px-2 "></i><a href="#" className='contactlink'>contact@company.com</a></p>
                                     <p class="para line-2 "><i class="bi bi-telephone px-2"></i>(+91)000-0000</p>
                                     <p class="para line-3 "><i class="bi bi-geo-alt px-2"></i>794 Mcallister St <br /> <p class="px-4">San Francisco, 94102</p></p>
                                 </div>
-                                <div className="columns d-flex justify-content-around w-75">
+                                <div className="columns flex justify-around w-[60%]  pb-10">
                                     <div className="column-1">
                                         <p class='head pb-2'><b>Product</b></p>
                                         <p className='c-fe'>Features</p>
@@ -57,23 +67,24 @@ const NewContact = () => {
                             </div>
                         </div>
                         <hr class="thick-line" />
-                        <div className="copyrights d-flex justify-content-around">
-                            <p>Copyright &copy; {currentYear} DOAGuru InfoSystems</p>
-                            <div className='d-flex'>
+                        <div className="copyrights flex justify-between px-4 pt-10 text-sm">
+                            <p>Copyright &copy; 2024 DOAGuru InfoSystems</p>
+                            <div className='flex '>
                                 <p>All Rights Reserved |</p>
                                 <p><a href="#" className='tandc'>Terms and Conditions |</a></p>
-                                <p><a href="#   " className='policy'>Privacy Policy</a></p>
+                                <p><a href="#" className='policy'>Privacy Policy</a></p>
                             </div>
                         </div>
                     </div>
                 </footer>
+                
 
             </StyledContact >
         </>
     )
 }
 
-export default Design;
+export default Footer;
 const StyledContact = styled.div`
 
 
@@ -98,25 +109,28 @@ i:hover {
     text-decoration: underline;
 }
 
+.icon {
+    
+}
 
-
+/* 
 @media screen and (min-width: 769px) and (max-width: 1024px){
 
-    .bottom-content {
+        .bottom-content {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .contact-info {
+            margin: auto;
+        }
+
+        .columns {
+        width: 90%;
         display: flex;
         justify-content: space-around;
-        align-items: center;
-    }
-
-    .contact-info {
-        margin: auto;
-    }
-
-    .columns {
-    width: 90%;
-    display: flex;
-    justify-content: space-around;
-    }
+        }
 
 }
 
@@ -155,7 +169,7 @@ i:hover {
         padding: 0px 10px;
     }
 
-}
+} */
 
 
 `;

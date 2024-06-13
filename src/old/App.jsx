@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 // import Contact from './componenets/Contact';
 // import NewContact from './componenets/NewContact';
 import ContactUs from './componenets/ContactUs';
@@ -10,12 +10,10 @@ import Login from './componenets/Login';
 
 
 function App() {
- 
 
   return (
 
     <>
-     <Router>
      <Routes>
       
      {/* <Route path="/Contact" element={<Contact />} />
@@ -25,8 +23,6 @@ function App() {
      <Route path="/Login" element={<Login/>} />
      {/* <Route path="/Design" element={<Design/>} /> */}
       </Routes> 
-
-     </Router>
      
      
     </>
